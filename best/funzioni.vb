@@ -378,17 +378,117 @@ Module funzioni
         home.lblBPS.Text = bps & " BPS"
     End Sub
 
+    'funzione che regola le direzioni in cui navigare nel labirinto
+    'NORD
+    'SUD
+    'EST
+    'OVEST
+    'L'ORDINE E' SEMPRE QUESTO
+    Public Sub direzione(dir As String)
+
+        With labirinto
+            Select Case dir
+                Case "1111"
+                    .cmdNord.Enabled = True
+                    .cmdSud.Enabled = True
+                    .cmdEst.Enabled = True
+                    .cmdOvest.Enabled = True
+                Case "1110"
+                    .cmdNord.Enabled = True
+                    .cmdSud.Enabled = True
+                    .cmdEst.Enabled = True
+                    .cmdOvest.Enabled = False
+                Case "1101"
+                    .cmdNord.Enabled = True
+                    .cmdSud.Enabled = True
+                    .cmdEst.Enabled = False
+                    .cmdOvest.Enabled = True
+                Case "1100"
+                    .cmdNord.Enabled = True
+                    .cmdSud.Enabled = True
+                    .cmdEst.Enabled = False
+                    .cmdOvest.Enabled = False
+                Case "1011"
+                    .cmdNord.Enabled = True
+                    .cmdSud.Enabled = False
+                    .cmdEst.Enabled = True
+                    .cmdOvest.Enabled = True
+                Case "1010"
+                    .cmdNord.Enabled = True
+                    .cmdSud.Enabled = False
+                    .cmdEst.Enabled = True
+                    .cmdOvest.Enabled = False
+                Case "1001"
+                    .cmdNord.Enabled = True
+                    .cmdSud.Enabled = False
+                    .cmdEst.Enabled = False
+                    .cmdOvest.Enabled = True
+                Case "1000"
+                    .cmdNord.Enabled = True
+                    .cmdSud.Enabled = False
+                    .cmdEst.Enabled = False
+                    .cmdOvest.Enabled = False
+                Case "0111"
+                    .cmdNord.Enabled = False
+                    .cmdSud.Enabled = True
+                    .cmdEst.Enabled = True
+                    .cmdOvest.Enabled = True
+                Case "0110"
+                    .cmdNord.Enabled = False
+                    .cmdSud.Enabled = True
+                    .cmdEst.Enabled = True
+                    .cmdOvest.Enabled = False
+                Case "0101"
+                    .cmdNord.Enabled = False
+                    .cmdSud.Enabled = True
+                    .cmdEst.Enabled = False
+                    .cmdOvest.Enabled = True
+                Case "0100"
+                    .cmdNord.Enabled = False
+                    .cmdSud.Enabled = True
+                    .cmdEst.Enabled = False
+                    .cmdOvest.Enabled = False
+                Case "0011"
+                    .cmdNord.Enabled = False
+                    .cmdSud.Enabled = False
+                    .cmdEst.Enabled = True
+                    .cmdOvest.Enabled = True
+                Case "0010"
+                    .cmdNord.Enabled = False
+                    .cmdSud.Enabled = False
+                    .cmdEst.Enabled = True
+                    .cmdOvest.Enabled = False
+                Case "0001"
+                    .cmdNord.Enabled = False
+                    .cmdSud.Enabled = False
+                    .cmdEst.Enabled = False
+                    .cmdOvest.Enabled = True
+                Case "0000"
+                    .cmdNord.Enabled = False
+                    .cmdSud.Enabled = False
+                    .cmdEst.Enabled = False
+                    .cmdOvest.Enabled = False
+            End Select
+        End With
+
+    End Sub
     'labirinto
     Public Sub labir()
+        Dim dir As String
 
         With labirinto
             Select Case posizione
                 Case 0
                     .lblLab.Text = "Puoi andare nord o a est"
+                    movimento = True
+                    dir = 1010
+                    direzione(dir)
                 Case 1
                     .lblLab.Text = "Puoi andare solo a ovest"
+                    movimento = True
                 Case 2
                     .lblLab.Text = "Puoi andare a nord o a ovest"
+                    movimento = True
                 Case 3
                     .lblLab.Text = "Puoi andare a est o ovest"
                 Case 5
@@ -397,6 +497,7 @@ Module funzioni
                     .lblLab.Text = "Puoi andare a ovest"
                 Case 7
                     .lblLab.Text = "Puoi andare a nord"
+
                 Case 8
                     .lblLab.Text = "C'è un muro! Non puoi proseguire."
                 Case 9
