@@ -485,6 +485,7 @@ Module funzioni
                     .cmdOvest.Enabled = False
             End Select
         End With
+        movimento = True
 
     End Sub
     'labirinto
@@ -493,6 +494,46 @@ Module funzioni
 
         With labirinto
             Select Case posizione
+                Case 0
+                    direzione("1001")
+                Case 1
+                    direzione("0010")
+                Case 2
+                    direzione("1001")
+                Case 3
+                    direzione("0011")
+                Case 4
+                    direzione("0011")
+                Case 5
+                    direzione("1011")
+                Case 6
+                    direzione("0010")
+                Case 7
+                    direzione("1000")
+                Case 8
+                    'non si può andare qui, c'è un muro
+                Case 9
+                    direzione("1000")
+                Case 10
+                    direzione("1100")
+                Case 11
+                    direzione("0010")
+                Case 12
+                    direzione("1101")
+                Case 13
+                    'muro
+                Case 14
+                    'muro
+                Case 15
+                    direzione("1100")
+                Case 16
+                    direzione("1010")
+                Case 17
+                    direzione("0111")
+                Case 18
+                    direzione("0011")
+                Case 19
+                    direzione("0101")
 
             End Select
         End With
