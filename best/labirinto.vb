@@ -43,6 +43,7 @@
     Private Sub labirinto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         posizione = 3
-
+        labir()
+        lblPosizione.Text = posizione
     End Sub
 End Class

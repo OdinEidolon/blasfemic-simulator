@@ -27,6 +27,7 @@ Partial Class labirinto
         Me.cmdEst = New System.Windows.Forms.Button()
         Me.cmdSud = New System.Windows.Forms.Button()
         Me.lblLab = New System.Windows.Forms.Label()
+        Me.lblPosizione = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'cmdNord
@@ -74,11 +75,21 @@ Partial Class labirinto
         Me.lblLab.TabIndex = 4
         Me.lblLab.Text = "Label1"
         '
+        'lblPosizione
+        '
+        Me.lblPosizione.AutoSize = True
+        Me.lblPosizione.Location = New System.Drawing.Point(376, 275)
+        Me.lblPosizione.Name = "lblPosizione"
+        Me.lblPosizione.Size = New System.Drawing.Size(51, 13)
+        Me.lblPosizione.TabIndex = 5
+        Me.lblPosizione.Text = "posizione"
+        '
         'labirinto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(791, 562)
+        Me.Controls.Add(Me.lblPosizione)
         Me.Controls.Add(Me.lblLab)
         Me.Controls.Add(Me.cmdSud)
         Me.Controls.Add(Me.cmdEst)
@@ -95,4 +106,5 @@ Partial Class labirinto
     Friend WithEvents cmdEst As System.Windows.Forms.Button
     Friend WithEvents cmdSud As System.Windows.Forms.Button
     Friend WithEvents lblLab As System.Windows.Forms.Label
+    Friend WithEvents lblPosizione As System.Windows.Forms.Label
 End Class

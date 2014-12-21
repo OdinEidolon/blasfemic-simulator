@@ -495,11 +495,11 @@ Module funzioni
         With labirinto
             Select Case posizione
                 Case 0
-                    direzione("1001")
+                    direzione("1010")
                 Case 1
-                    direzione("0010")
+                    direzione("0001")
                 Case 2
-                    direzione("1001")
+                    direzione("1010")
                 Case 3
                     direzione("0011")
                 Case 4
@@ -507,7 +507,7 @@ Module funzioni
                 Case 5
                     direzione("1011")
                 Case 6
-                    direzione("0010")
+                    direzione("0001")
                 Case 7
                     direzione("1000")
                 Case 8
@@ -534,8 +534,171 @@ Module funzioni
                     direzione("0011")
                 Case 19
                     direzione("0101")
-
+                Case 20
+                    direzione("1110")
+                Case 21
+                    direzione("1001")
+                Case 22
+                    direzione("0110")
+                Case 23
+                    direzione("0011")
+                Case 24
+                    direzione("1011")
+                Case 25
+                    direzione("0111")
+                Case 26
+                    direzione("1101")
+                Case 27
+                    direzione("1010")
+                Case 28
+                    direzione("1010")
+                Case 29
+                    direzione("1000")
+                Case 30
+                    'muro
+                Case 31
+                    direzione("1110")
+                Case 32
+                    direzione("0011")
+                Case 33
+                    direzione("0011")
+                Case 34
+                    direzione("1101")
+                Case 35
+                    direzione("1000")
+                Case 36
+                    direzione("1100")
+                Case 37
+                    direzione("0100")
+                Case 38
+                    direzione("1100")
+                Case 39
+                    direzione("1100")
+                Case 40
+                    direzione("0010")
+                Case 41
+                    direzione("0101")
+                Case 42
+                    direzione("1000")
+                Case 43
+                    direzione("1000")
+                Case 44
+                    direzione("0110")
+                Case 45
+                    direzione("0111")
+                Case 46
+                    direzione("0111")
+                Case 47
+                    direzione("1011")
+                Case 48
+                    direzione("0101")
+                Case 49
+                    direzione("0011")
+                Case 50
+                    direzione("0010")
+                Case 51
+                    direzione("1011")
+                Case 52
+                    direzione("0101")
+                Case 53
+                    direzione("0110")
+                Case 54
+                    direzione("0011")
+                Case 55
+                    direzione("1001")
+                Case 56
+                    'muro
+                Case 57
+                    direzione("1100")
+                Case 58
+                    direzione("1010")
+                Case 59
+                    direzione("0101")
+                Case 60
+                    direzione("1000")
+                Case 61
+                    direzione("0110")
+                Case 62
+                    direzione("1001")
+                Case 63
+                    direzione("0010")
+                Case 64
+                    direzione("1011")
+                Case 65
+                    direzione("0111")
+                Case 66
+                    direzione("1011")
+                Case 67
+                    direzione("0101")
+                Case 68
+                    direzione("0100")
+                Case 69
+                    direzione("1000")
+                Case 70
+                    direzione("1110")
+                Case 71
+                    direzione("0011")
+                Case 72
+                    direzione("1111")
+                Case 73
+                    direzione("0011")
+                Case 74
+                    direzione("1101")
+                Case 75
+                    'muro
+                Case 76
+                    direzione("0110")
+                Case 77
+                    direzione("1011")
+                Case 78
+                    direzione("0011")
+                Case 79
+                    direzione("1100")
+                Case 80
+                    direzione("1110")
+                Case 81
+                    direzione("1001")
+                Case 82
+                    direzione("1100")
+                Case 83
+                    direzione("1010")
+                Case 84
+                    direzione("0101")
+                Case 85
+                    'muro
+                Case 86
+                    direzione("1010")
+                Case 87
+                    direzione("0101")
+                Case 88
+                    direzione("1000")
+                Case 89
+                    direzione("1100")
+                Case 90
+                    direzione("0100")
+                Case 91
+                    direzione("0100")
+                    'USCITA
+                Case 92
+                    direzione("0100")
+                Case 93
+                    direzione("0100")
+                Case 94
+                    direzione("0010")
+                Case 95
+                    direzione("0011")
+                Case 96
+                    direzione("0111")
+                Case 97
+                    direzione("0011")
+                Case 98
+                    direzione("0101")
+                Case 99
+                    direzione("0100")
             End Select
+
+            .lblPosizione.Text = posizione
+
         End With
     End Sub
 

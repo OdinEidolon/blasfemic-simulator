@@ -192,5 +192,11 @@
         fontanab.Show()
 
     End Sub
+
+    Private Sub cmdLabirinto_Click(sender As Object, e As EventArgs) Handles cmdLabirinto.Click
+
+        labirinto.Show()
+
+    End Sub
 End Class
 
