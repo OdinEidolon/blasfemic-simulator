@@ -393,76 +393,91 @@ Module funzioni
                     .cmdSud.Enabled = True
                     .cmdEst.Enabled = True
                     .cmdOvest.Enabled = True
+                    .lblLab.Text = "Puoi andare a nord, a sud, ad est o ad ovest."
                 Case "1110"
                     .cmdNord.Enabled = True
                     .cmdSud.Enabled = True
                     .cmdEst.Enabled = True
                     .cmdOvest.Enabled = False
+                    .lblLab.Text = "Puoi andare a nord, a sud o ad est."
                 Case "1101"
                     .cmdNord.Enabled = True
                     .cmdSud.Enabled = True
                     .cmdEst.Enabled = False
                     .cmdOvest.Enabled = True
+                    .lblLab.Text = "Puoi andare a nord, a sud o ad ovest."
                 Case "1100"
                     .cmdNord.Enabled = True
                     .cmdSud.Enabled = True
                     .cmdEst.Enabled = False
                     .cmdOvest.Enabled = False
+                    .lblLab.Text = "Puoi andare a nord o a sud."
                 Case "1011"
                     .cmdNord.Enabled = True
                     .cmdSud.Enabled = False
                     .cmdEst.Enabled = True
                     .cmdOvest.Enabled = True
+                    .lblLab.Text = "Puoi andare a nord, ad est o ad ovest."
                 Case "1010"
                     .cmdNord.Enabled = True
                     .cmdSud.Enabled = False
                     .cmdEst.Enabled = True
                     .cmdOvest.Enabled = False
+                    .lblLab.Text = "Puoi andare a nord o ad est."
                 Case "1001"
                     .cmdNord.Enabled = True
                     .cmdSud.Enabled = False
                     .cmdEst.Enabled = False
                     .cmdOvest.Enabled = True
+                    .lblLab.Text = "Puoi andare a nord o ad ovest."
                 Case "1000"
                     .cmdNord.Enabled = True
                     .cmdSud.Enabled = False
                     .cmdEst.Enabled = False
                     .cmdOvest.Enabled = False
+                    .lblLab.Text = "Puoi andare a nord."
                 Case "0111"
                     .cmdNord.Enabled = False
                     .cmdSud.Enabled = True
                     .cmdEst.Enabled = True
                     .cmdOvest.Enabled = True
+                    .lblLab.Text = "Puoi andare a sud, ad est o ad ovest."
                 Case "0110"
                     .cmdNord.Enabled = False
                     .cmdSud.Enabled = True
                     .cmdEst.Enabled = True
                     .cmdOvest.Enabled = False
+                    .lblLab.Text = "Puoi andare a sud o ad est."
                 Case "0101"
                     .cmdNord.Enabled = False
                     .cmdSud.Enabled = True
                     .cmdEst.Enabled = False
                     .cmdOvest.Enabled = True
+                    .lblLab.Text = "Puoi andare a sud o ad ovest."
                 Case "0100"
                     .cmdNord.Enabled = False
                     .cmdSud.Enabled = True
                     .cmdEst.Enabled = False
                     .cmdOvest.Enabled = False
+                    .lblLab.Text = "Puoi andare a sud."
                 Case "0011"
                     .cmdNord.Enabled = False
                     .cmdSud.Enabled = False
                     .cmdEst.Enabled = True
                     .cmdOvest.Enabled = True
+                    .lblLab.Text = "Puoi andare ad est o ad ovest."
                 Case "0010"
                     .cmdNord.Enabled = False
                     .cmdSud.Enabled = False
                     .cmdEst.Enabled = True
                     .cmdOvest.Enabled = False
+                    .lblLab.Text = "Puoi andare ad est."
                 Case "0001"
                     .cmdNord.Enabled = False
                     .cmdSud.Enabled = False
                     .cmdEst.Enabled = False
                     .cmdOvest.Enabled = True
+                    .lblLab.Text = "Puoi andare ad ovest."
                 Case "0000"
                     .cmdNord.Enabled = False
                     .cmdSud.Enabled = False
@@ -478,30 +493,7 @@ Module funzioni
 
         With labirinto
             Select Case posizione
-                Case 0
-                    .lblLab.Text = "Puoi andare nord o a est"
-                    movimento = True
-                    dir = 1010
-                    direzione(dir)
-                Case 1
-                    .lblLab.Text = "Puoi andare solo a ovest"
-                    movimento = True
-                Case 2
-                    .lblLab.Text = "Puoi andare a nord o a ovest"
-                    movimento = True
-                Case 3
-                    .lblLab.Text = "Puoi andare a est o ovest"
-                Case 5
-                    .lblLab.Text = "Puoi andare a nord, a est o ad ovest"
-                Case 6
-                    .lblLab.Text = "Puoi andare a ovest"
-                Case 7
-                    .lblLab.Text = "Puoi andare a nord"
 
-                Case 8
-                    .lblLab.Text = "C'è un muro! Non puoi proseguire."
-                Case 9
-                    .lblLab.Text = "Puoi andare a nord"
             End Select
         End With
     End Sub
