@@ -384,8 +384,23 @@ Module funzioni
         With labirinto
             Select Case posizione
                 Case 0
-                    '.lblLab.Text("Puoi andare solo a nord e ad est")
-
+                    .lblLab.Text = "Puoi andare nord o a est"
+                Case 1
+                    .lblLab.Text = "Puoi andare solo a ovest"
+                Case 2
+                    .lblLab.Text = "Puoi andare a nord o a ovest"
+                Case 3
+                    .lblLab.Text = "Puoi andare a est o ovest"
+                Case 5
+                    .lblLab.Text = "Puoi andare a nord, a est o ad ovest"
+                Case 6
+                    .lblLab.Text = "Puoi andare a ovest"
+                Case 7
+                    .lblLab.Text = "Puoi andare a nord"
+                Case 8
+                    .lblLab.Text = "C'è un muro! Non puoi proseguire."
+                Case 9
+                    .lblLab.Text = "Puoi andare a nord"
             End Select
         End With
     End Sub
