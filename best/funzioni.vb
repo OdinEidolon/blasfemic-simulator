@@ -478,11 +478,11 @@ Module funzioni
                     .cmdEst.Enabled = False
                     .cmdOvest.Enabled = True
                     .lblLab.Text = "Puoi andare ad ovest."
-                Case "0000"
-                    .cmdNord.Enabled = False
-                    .cmdSud.Enabled = False
-                    .cmdEst.Enabled = False
-                    .cmdOvest.Enabled = False
+                    'Case "0000"
+                    '.cmdNord.Enabled = False
+                    '.cmdSud.Enabled = False
+                    '.cmdEst.Enabled = False
+                    '.cmdOvest.Enabled = False
             End Select
         End With
         movimento = True
@@ -496,28 +496,38 @@ Module funzioni
             Select Case posizione
                 Case 0
                     direzione("1010")
+                    'aggiungere boss
                 Case 1
                     direzione("0001")
+                    'aggiungere loot vuoto
                 Case 2
                     direzione("1010")
                 Case 3
                     direzione("0011")
+                    .lblLab.Text = "Una volta scese le lunghe e buie scale che si fanno strada sottoterra, un imponente cancello sbarrato ti si para davanti." & vbCrLf & "Dopo un'attenta ricerca trovi il meccanismo di apertura, lo attivi e odi un celestiale rumore come fosse un canto di angeli." & vbCrLf & "Dopo essere entrato ti rendi conto che la cripta, in realtà, è un labirinto." & vbCrLf & .lblLab.Text
                 Case 4
                     direzione("0011")
+                    .lblLab.Text = "Alla tua destra e alla tua sinistra ci sono due statue di pietra raffiguranti due angeli che reggono un libro" & vbCrLf & .lblLab.Text
                 Case 5
                     direzione("1011")
                 Case 6
                     direzione("0001")
+                    .lblLab.Text = "Sul pavimento trovi una grata di ferro dalla quale senti scorrere dell'acqua (probabilmente santa)." & vbCrLf & .lblLab.Text
                 Case 7
                     direzione("1000")
+                    .lblLab.Text = "Ha tutta l'aria di essere un vicolo cieco." & vbCrLf & .lblLab.Text
                 Case 8
                     'non si può andare qui, c'è un muro
                 Case 9
                     direzione("1000")
+                    .lblLab.Text = "Sembra un vicolo cieco." & vbCrLf & .lblLab.Text
                 Case 10
                     direzione("1100")
+                    'aggiungere eccezione per scontro
+                    .lblLab.Text = "Da qui è udibile una cantilena di quella che sembra una preghiera provenire dalla luce accecante davanti a te." & vbCrLf & .lblLab.Text
                 Case 11
                     direzione("0010")
+                    .lblLab.Text = "Non c'è niente qui." & vbCrLf & .lblLab.Text
                 Case 12
                     direzione("1101")
                 Case 13
@@ -530,6 +540,7 @@ Module funzioni
                     direzione("1010")
                 Case 17
                     direzione("0111")
+                    .lblLab.Text = "Al centro della stanza c'è un'acquasantiera di marmo segnata dal tempo." & vbCrLf & .lblLab.Text
                 Case 18
                     direzione("0011")
                 Case 19
@@ -538,18 +549,23 @@ Module funzioni
                     direzione("1110")
                 Case 21
                     direzione("1001")
+                    .lblLab.Text = "Sul soffitto è presente un affresco completamente sfigurato dalla muffa e dal tempo." & vbCrLf & .lblLab.Text
                 Case 22
                     direzione("0110")
+                    .lblLab.Text = "Sul muro a nord vedi un affresco raffigurante un caotico scenario di morte e distruzione, dominato dai Quattro Cavalieri dell'Apocalisse." & vbCrLf & .lblLab.Text
                 Case 23
                     direzione("0011")
                 Case 24
                     direzione("1011")
+                    .lblLab.Text = "A terra trovi due vecchi e polverosi scheletri semidistrutti dal tempo." & vbCrLf & .lblLab.Text
                 Case 25
                     direzione("0111")
+                    .lblLab.Text = "C'è una maggiore presenza di muschio sulle pareti, rispetto alle altre stanze." & vbCrLf & .lblLab.Text
                 Case 26
                     direzione("1101")
                 Case 27
                     direzione("1010")
+                    .lblLab.Text = "Il terreno qui è molto umido e soffice." & vbCrLf & .lblLab.Text
                 Case 28
                     direzione("1010")
                 Case 29
@@ -558,70 +574,95 @@ Module funzioni
                     'muro
                 Case 31
                     direzione("1110")
+                    .lblLab.Text = "Senti una corrente d'aria provenire da nord." & vbCrLf & .lblLab.Text
                 Case 32
                     direzione("0011")
                 Case 33
                     direzione("0011")
                 Case 34
                     direzione("1101")
+                    .lblLab.Text = "Diversi crocifissi di legno marcio giacciono a terra accanto al muro." & vbCrLf & .lblLab.Text
                 Case 35
                     direzione("1000")
+                    .lblLab.Text = "Vedi numerose fenditure nel soffitto dalle quali scendosi copiosi rivoli d'acqua." & vbCrLf & .lblLab.Text
                 Case 36
                     direzione("1100")
+                    .lblLab.Text = "Ai lati della stanza ci sono due statue di pietra che brandiscono due spade che puntano verso l'alto. La testa di uno è crollata a terra." & vbCrLf & .lblLab.Text
                 Case 37
                     direzione("0100")
+                    .lblLab.Text = "Una volta entrato in questa stanza noti un burrone che si estende davanti a te. Non è consigliabile proseguire oltre. Anche se dall'altra parte riesci a vedere uno scettro d'oro con un rubino sulla cima che sicuramente vale molti denari." & vbCrLf & .lblLab.Text
                 Case 38
                     direzione("1100")
+                    .lblLab.Text = "Sembra che un tempo lungo queste pareti c'erano due statue. Ora i detriti giacciono a terra." & vbCrLf & .lblLab.Text
                 Case 39
                     direzione("1100")
                 Case 40
                     direzione("0010")
+                    .lblLab.Text = "Sulla parente davanti a te trovi una fessura dalla quale esce dell'aria fresca. La fessura però è troppo profonda per riuscire a vedere dall'altro lato." & vbCrLf & .lblLab.Text
                 Case 41
                     direzione("0101")
+                    .lblLab.Text = "Senti una corrente d'aria provenire da ovest." & vbCrLf & .lblLab.Text
                 Case 42
                     direzione("1000")
+                    .lblLab.Text = "C'è uno scheletro appoggiato alla parete; sopra di esso c'è una scritta sbiadita fatta col sangue. '42'" & vbCrLf & .lblLab.Text
                 Case 43
                     direzione("1000")
+                    .lblLab.Text = "Sulla parete meridionale noti un bassorilievo rovinato di uno strano animale con dieci corna e sette teste." & vbCrLf & .lblLab.Text
                 Case 44
                     direzione("0110")
+                    .lblLab.Text = "Non noti nulla di insolito." & vbCrLf & .lblLab.Text
                 Case 45
                     direzione("0111")
+                    .lblLab.Text = "Si sente un rumore d'acqua che sgorga." & vbCrLf & .lblLab.Text
                 Case 46
                     direzione("0111")
                 Case 47
                     direzione("1011")
+                    'aggiungere medaglione per aprire la porta
+                    .lblLab.Text = "Sulla parete nord noti una fessura verticale intagliata nella pietra. Al centro di essa c'è inciso un cerchio con varie rifiniture all'interno." & vbCrLf & .lblLab.Text
                 Case 48
                     direzione("0101")
+                    .lblLab.Text = "Il soffitto qui è parzialmente crollato." & vbCrLf & .lblLab.Text
                 Case 49
                     direzione("0011")
+                    .lblLab.Text = "Molti detriti ricoprono il pavimento, il passaggio è molto difficile." & vbCrLf & .lblLab.Text
                 Case 50
                     direzione("0010")
+                    .lblLab.Text = "Strada sbagliata, a quanto pare." & vbCrLf & .lblLab.Text
                 Case 51
                     direzione("1011")
                 Case 52
                     direzione("0101")
+                    .lblLab.Text = "Senti una voce che dice: Beati i puri di cuore perchè vedranno Dio." & vbCrLf & .lblLab.Text
                 Case 53
                     direzione("0110")
                 Case 54
                     direzione("0011")
+                    .lblLab.Text = "Trovi un cadavere non del tutto decomposto con una spada arrugginita piantata nel petto." & vbCrLf & .lblLab.Text
                 Case 55
                     direzione("1001")
+                    .lblLab.Text = "Lungo la parete orientale si legge un'incisione: Temete Dio e dategli gloria, perché è giunta l'ora del suo giudizio." & vbCrLf & .lblLab.Text
                 Case 56
                     'muro
                 Case 57
                     direzione("1100")
+                    .lblLab.Text = "Vedi una porta aperta verso sud" & vbCrLf & .lblLab.Text
                 Case 58
                     direzione("1010")
                 Case 59
                     direzione("0101")
+                    .lblLab.Text = "Dal soffitto si estendono delle antiche e nodose radici che arrivano fino al suolo. Per passare dovrai farti largo tra esse." & vbCrLf & .lblLab.Text
                 Case 60
                     direzione("1000")
+                    .lblLab.Text = "E' molto bello qui!" & vbCrLf & .lblLab.Text
                 Case 61
                     direzione("0110")
                 Case 62
                     direzione("1001")
+                    .lblLab.Text = "Questa stanza è insolitamente illuminata. Non riesci a capire qual è la fonte di luce." & vbCrLf & .lblLab.Text
                 Case 63
                     direzione("0010")
+                    .lblLab.Text = "Puoi solo tornare indietro." & vbCrLf & .lblLab.Text
                 Case 64
                     direzione("1011")
                 Case 65
@@ -630,34 +671,45 @@ Module funzioni
                     direzione("1011")
                 Case 67
                     direzione("0101")
+                    .lblLab.Text = "Mucchi di cadaveri di roditori ti circondano." & vbCrLf & .lblLab.Text
                 Case 68
                     direzione("0100")
+                    'c'è il boss belluino che ti droppa il fucile belluino
                 Case 69
                     direzione("1000")
+                    .lblLab.Text = "La libreria prosegue anche in questa stanza fra ragnatele e polvere." & vbCrLf & .lblLab.Text
                 Case 70
                     direzione("1110")
                 Case 71
                     direzione("0011")
                 Case 72
                     direzione("1111")
+                    .lblLab.Text = "Ogni direzione è aperta." & vbCrLf & .lblLab.Text
                 Case 73
                     direzione("0011")
                 Case 74
                     direzione("1101")
+                    .lblLab.Text = "Non noti nulla di particolare rispetto le altre stanze." & vbCrLf & .lblLab.Text
                 Case 75
                     'muro
                 Case 76
                     direzione("0110")
+                    .lblLab.Text = "Al centro della stanza c'è un pozzo di cui non riesci a vedere il fondo." & vbCrLf & .lblLab.Text
                 Case 77
                     direzione("1011")
                 Case 78
                     direzione("0011")
+                    .lblLab.Text = "Verso est c'è una pesante grata di ferro battuto, chiusa con un grosso lucchetto." & vbCrLf & .lblLab.Text
+                    'aggiungere roba per aprire la grata di stocazzo
                 Case 79
                     direzione("1100")
+                    .lblLab.Text = "Lungo le pareti ci sono delle librerie, piene di tomi consumati dal tempo." & vbCrLf & .lblLab.Text
                 Case 80
                     direzione("1110")
+                    .lblLab.Text = "Inizi a intravedere la luce del sole." & vbCrLf & .lblLab.Text
                 Case 81
                     direzione("1001")
+                    '???
                 Case 82
                     direzione("1100")
                 Case 83
@@ -668,33 +720,46 @@ Module funzioni
                     'muro
                 Case 86
                     direzione("1010")
+                    .lblLab.Text = "Sulla parete meridionale ci sono degli scaffali con degli strumenti strani, il cui uso ti è sconosciuto. Ti avvicini e scopri che sono sporchi di sangue secco." & vbCrLf & .lblLab.Text
                 Case 87
                     direzione("0101")
                 Case 88
                     direzione("1000")
+                    .lblLab.Text = "Al centro della stanza c'è la tomba di San Giovanni." & vbCrLf & .lblLab.Text
                 Case 89
                     direzione("1100")
+                    'boss cattivone (probabilmente l'apparizione di san giovanni)
                 Case 90
                     direzione("0100")
+                    .lblLab.Text = "Ti accorgi all'ultimo momento che c'è un buco profondo davanti a te. Devi tornare indietro." & vbCrLf & .lblLab.Text
                 Case 91
                     direzione("0100")
+                    .lblLab.Text = "Noti subito un'enorme portale da cui penetrano fasci di luce attraverso intricate edere. Sembra essere l'uscita." & vbCrLf & .lblLab.Text
                     'USCITA
                 Case 92
                     direzione("0100")
+                    .lblLab.Text = "La parete davanti a te è franata." & vbCrLf & .lblLab.Text
                 Case 93
                     direzione("0100")
+                    .lblLab.Text = "Al centro della stanza c'è la statua di un angelo imponente, le cui ali sono sbriciolate per terra." & vbCrLf & .lblLab.Text
                 Case 94
                     direzione("0010")
+                    .lblLab.Text = "Nope!" & vbCrLf & .lblLab.Text
                 Case 95
                     direzione("0011")
+                    .lblLab.Text = "La tua attenzione viene attirata da un sarcofago semidistrutto, il cui occupante sembra esser stato chiuso dentro vivo." & vbCrLf & .lblLab.Text
                 Case 96
                     direzione("0111")
+                    .lblLab.Text = "Capisci di essere entrato nella vera e propria cripta, poichè lungo le pareti vi sono numerosi sarcofagi." & vbCrLf & .lblLab.Text
                 Case 97
                     direzione("0011")
                 Case 98
                     direzione("0101")
+                    .lblLab.Text = "Lungo le pareti noti diversi compartimenti pieni di vasi, probabilmente urne cinerarie." & vbCrLf & .lblLab.Text
                 Case 99
                     direzione("0100")
+                    .lblLab.Text = "Al centro della stanza fra altre librerie, c'è un leggio in pietra. Sopra di esso è appoggiato un tomo talmente antico che sembra basti una leggera brezza per sbriciolarlo. La rilegatura recita 'Il libro della Rivelazione'." & vbCrLf & .lblLab.Text
+                    'loot del boss cattivone
             End Select
 
             .lblPosizione.Text = posizione

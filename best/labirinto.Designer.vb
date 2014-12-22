@@ -68,10 +68,9 @@ Partial Class labirinto
         '
         'lblLab
         '
-        Me.lblLab.AutoSize = True
-        Me.lblLab.Location = New System.Drawing.Point(277, 72)
+        Me.lblLab.Location = New System.Drawing.Point(216, 9)
         Me.lblLab.Name = "lblLab"
-        Me.lblLab.Size = New System.Drawing.Size(39, 13)
+        Me.lblLab.Size = New System.Drawing.Size(211, 119)
         Me.lblLab.TabIndex = 4
         Me.lblLab.Text = "Label1"
         '
