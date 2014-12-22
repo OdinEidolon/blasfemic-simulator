@@ -478,11 +478,6 @@ Module funzioni
                     .cmdEst.Enabled = False
                     .cmdOvest.Enabled = True
                     .lblLab.Text = "Puoi andare ad ovest."
-                    'Case "0000"
-                    '.cmdNord.Enabled = False
-                    '.cmdSud.Enabled = False
-                    '.cmdEst.Enabled = False
-                    '.cmdOvest.Enabled = False
             End Select
         End With
         movimento = True
@@ -490,7 +485,6 @@ Module funzioni
     End Sub
     'labirinto
     Public Sub labir()
-        Dim dir As String
 
         With labirinto
             Select Case posizione

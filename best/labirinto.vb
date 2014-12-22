@@ -4,9 +4,6 @@
 
         posizione += 10
         labir()
-        If movimento = False Then
-            posizione -= 10
-        End If
 
     End Sub
 
@@ -14,9 +11,6 @@
 
         posizione -= 10
         labir()
-        If movimento = False Then
-            posizione += 10
-        End If
 
     End Sub
 
@@ -24,9 +18,6 @@
 
         posizione += 1
         labir()
-        If movimento = False Then
-            posizione -= 1
-        End If
 
     End Sub
 
@@ -34,9 +25,6 @@
 
         posizione -= 1
         labir()
-        If movimento = False Then
-            posizione += 1
-        End If
 
     End Sub
 
@@ -45,5 +33,6 @@
         posizione = 3
         labir()
         lblPosizione.Text = posizione
+
     End Sub
 End Class
