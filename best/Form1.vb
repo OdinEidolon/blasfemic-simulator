@@ -198,5 +198,11 @@
         labirinto.Show()
 
     End Sub
+
+    Private Sub cmdTemp_Click(sender As Object, e As EventArgs) Handles cmdTemp.Click
+
+        boss_templare.Show()
+
+    End Sub
 End Class
 

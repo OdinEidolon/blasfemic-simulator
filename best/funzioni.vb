@@ -42,7 +42,7 @@
 
     'armature
     Public armor1 As Boolean = False 'armatura di ferro maledetta
-    Public scudo1 As Boolean = False
+    Public scudo1 As Boolean = False 'scudo dell'eresia
 
     'armi
     Public bastone1 As Boolean = False 'bastone inciso
@@ -68,7 +68,10 @@
 
     'labirino
     Public posizione As Integer
-    Public movimento As Boolean
+    'Public movimento As Boolean
+
+    'boss del labirinto123e
+    Public templare As Integer = 0
 
 End Module
 
@@ -480,7 +483,6 @@ Module funzioni
                     .lblLab.Text = "Puoi andare ad ovest."
             End Select
         End With
-        movimento = True
 
     End Sub
     'labirinto
@@ -563,7 +565,7 @@ Module funzioni
                 Case 28
                     direzione("1010")
                 Case 29
-                    direzione("1000")
+                    direzione("1001")
                 Case 30
                     'muro
                 Case 31
@@ -618,7 +620,7 @@ Module funzioni
                     direzione("0101")
                     .lblLab.Text = "Il soffitto qui è parzialmente crollato." & vbCrLf & .lblLab.Text
                 Case 49
-                    direzione("0011")
+                    direzione("1100")
                     .lblLab.Text = "Molti detriti ricoprono il pavimento, il passaggio è molto difficile." & vbCrLf & .lblLab.Text
                 Case 50
                     direzione("0010")
@@ -696,7 +698,7 @@ Module funzioni
                     .lblLab.Text = "Verso est c'è una pesante grata di ferro battuto, chiusa con un grosso lucchetto." & vbCrLf & .lblLab.Text
                     'aggiungere roba per aprire la grata di stocazzo
                 Case 79
-                    direzione("1100")
+                    direzione("1101")
                     .lblLab.Text = "Lungo le pareti ci sono delle librerie, piene di tomi consumati dal tempo." & vbCrLf & .lblLab.Text
                 Case 80
                     direzione("1110")

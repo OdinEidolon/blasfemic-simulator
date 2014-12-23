@@ -58,6 +58,7 @@ Partial Class home
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.cmdMappa = New System.Windows.Forms.Button()
         Me.cmdLabirinto = New System.Windows.Forms.Button()
+        Me.cmdTemp = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.grbInventario.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -404,11 +405,21 @@ Partial Class home
         Me.cmdLabirinto.Text = "Labirinto"
         Me.cmdLabirinto.UseVisualStyleBackColor = True
         '
+        'cmdTemp
+        '
+        Me.cmdTemp.Location = New System.Drawing.Point(299, 166)
+        Me.cmdTemp.Name = "cmdTemp"
+        Me.cmdTemp.Size = New System.Drawing.Size(79, 25)
+        Me.cmdTemp.TabIndex = 27
+        Me.cmdTemp.Text = "Templare"
+        Me.cmdTemp.UseVisualStyleBackColor = True
+        '
         'home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(602, 477)
+        Me.Controls.Add(Me.cmdTemp)
         Me.Controls.Add(Me.cmdLabirinto)
         Me.Controls.Add(Me.cmdMappa)
         Me.Controls.Add(Me.grbFontana)
@@ -479,5 +490,6 @@ Partial Class home
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents cmdMappa As System.Windows.Forms.Button
     Friend WithEvents cmdLabirinto As System.Windows.Forms.Button
+    Friend WithEvents cmdTemp As System.Windows.Forms.Button
 
 End Class

@@ -2,7 +2,6 @@
 
     Dim i As Integer
 
-
     'variabili relative agli scontri
     Dim playerTurn As Boolean = True
     Dim enemyTurn As Boolean = False
@@ -237,6 +236,9 @@
                         home.lstInventario.Items.Add("Mappa")
                     End If
                 End If
+
+            Case "Angelus"
+
 
         End Select
 
