@@ -33,6 +33,7 @@ Partial Class boss_templare
         Me.lblDannoTuo = New System.Windows.Forms.Label()
         Me.lblDannoTemplare = New System.Windows.Forms.Label()
         Me.timer_animazione = New System.Windows.Forms.Timer(Me.components)
+        Me.timer_parata = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'cmdAttacca
@@ -119,6 +120,10 @@ Partial Class boss_templare
         '
         Me.timer_animazione.Interval = 300
         '
+        'timer_parata
+        '
+        Me.timer_parata.Interval = 500
+        '
         'boss_templare
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -148,4 +153,5 @@ Partial Class boss_templare
     Friend WithEvents lblDannoTuo As System.Windows.Forms.Label
     Friend WithEvents lblDannoTemplare As System.Windows.Forms.Label
     Friend WithEvents timer_animazione As System.Windows.Forms.Timer
+    Friend WithEvents timer_parata As System.Windows.Forms.Timer
 End Class
